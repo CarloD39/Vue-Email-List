@@ -1,0 +1,13 @@
+.button-input{
+    background-color: rgb(235, 121, 15);
+    border-radius: 10px;
+    color: white;
+    border-style:groove;
+    cursor: pointer;
+}
+
+.container{
+    background-color: orange;
+    width: 300px;
+    margin-top: 10px;
+}

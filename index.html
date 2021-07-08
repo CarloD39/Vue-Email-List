@@ -15,12 +15,15 @@
 
     <div id="app">
         <span>GENERIAMO UNA LISTA DI NUMERI</span>
-        <button @click="getsEmails">CREATE</button>
-        <ul v-for="email in emails">
-            <li>
-                {{email}}
-            </li>
-        </ul>
+        <button @click="getsEmails" class="button-input">CREATE</button>
+        <div :class="getsEmails" class="container">
+            <ul v-for="email in emails" v-if="emails.length === 10">
+                <li>
+                    {{email}}
+                </li>
+            </ul>
+        </div>
+        
 
 
     </div>
