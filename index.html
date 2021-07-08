@@ -17,14 +17,13 @@
         <span>GENERIAMO UNA LISTA DI NUMERI</span>
         <button @click="getsEmails" class="button-input">CREATE</button>
         <div :class="getsEmails" class="container">
-            <ul v-for="email in emails" v-if="emails.length === 10">
+            <ul v-for="email in emails"> 
                 <li>
                     {{email}}
                 </li>
             </ul>
         </div>
         
-
 
     </div>
     
