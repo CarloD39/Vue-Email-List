@@ -17,7 +17,7 @@
         <span>GENERIAMO UNA LISTA DI NUMERI</span>
         <button @click="getsEmails" class="button-input">CREATE</button>
         <div :class="getsEmails" class="container">
-            <ul v-for="email in emails"> 
+            <ul v-if = "emails.length === 10" v-for="email in emails"> 
                 <li>
                     {{email}}
                 </li>
